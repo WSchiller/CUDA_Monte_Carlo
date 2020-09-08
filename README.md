@@ -12,4 +12,4 @@ There are four scenarios that can depicted from the image above:
 (C) The beam bounces off the circle, misses the plate, and is directed off into space. 
 (D) The beam bounces off the circle and successfully hits the plate.
 
-The project will be run with four block sizes (number of threads per block) of 16, 32, 64, and 128; and trial sizes of 16384 32768 65536 131072 262144 524288 1024000.
+The project will be run with four block sizes (number of threads per block) of 16, 32, 64, and 128; and trial sizes of 16384, 32768, 65536, 131072, 262144, 524288, 1024000.
