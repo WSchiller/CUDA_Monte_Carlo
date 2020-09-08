@@ -1,0 +1,110 @@
+Block Size: 16
+Number of Trials =      16384   MegaTrials/Second =   551.7241
+Probability = 41.364 %
+                                                                                                                                                           
+Block Size: 16
+Number of Trials =      32768   MegaTrials/Second =   970.6161
+Probability = 41.135 %
+                                                                                                                                                          
+Block Size: 16
+Number of Trials =      65536   MegaTrials/Second =  1828.5714
+Probability = 42.119 %
+                                                                                                                                                         
+Block Size: 16
+Number of Trials =     131072   MegaTrials/Second =  2769.4389
+Probability = 42.267 %
+                                                                                                                                                         
+Block Size: 16
+Number of Trials =     262144   MegaTrials/Second =  4525.9667
+Probability = 42.067 %
+                                                                                                                                                           
+Block Size: 16
+Number of Trials =     524288   MegaTrials/Second =  6054.6930
+Probability = 41.983 %                                                                                                                                                          
+
+Block Size: 16
+Number of Trials =    1024000   MegaTrials/Second =  7402.2668
+Probability = 42.052 %                                                                                                                                                       
+
+Block Size: 32
+Number of Trials =      16384   MegaTrials/Second =   551.7241
+Probability = 42.035 %                                                                                                                                                           
+
+Block Size: 32
+Number of Trials =      32768   MegaTrials/Second =  1044.8979
+Probability = 42.044 %
+                                                                                                                                                     
+Block Size: 32
+Number of Trials =      65536   MegaTrials/Second =  1933.8998
+Probability = 41.785 %                                                                                                                                                           
+
+Block Size: 32
+Number of Trials =     131072   MegaTrials/Second =  3555.5554
+Probability = 41.917 %                                                                                                                                                       
+
+Block Size: 32
+Number of Trials =     262144   MegaTrials/Second =  5923.3548
+Probability = 41.967 %                                                                                                                                                          
+
+Block Size: 32
+Number of Trials =     524288   MegaTrials/Second =  8827.5860
+Probability = 41.982 %                                                                                                                                                          
+Block Size: 32
+Number of Trials =    1024000   MegaTrials/Second = 11940.2989
+Probability = 41.973 %
+                                                                                                                                                          
+Block Size: 64
+Number of Trials =      16384   MegaTrials/Second =   571.4286
+Probability = 42.102 %
+                                                                                                                                                             
+Block Size: 64
+Number of Trials =      32768   MegaTrials/Second =  1089.3617
+Probability = 42.200 %
+                                                                                                                                                           
+Block Size: 64
+Number of Trials =      65536   MegaTrials/Second =  2068.6869
+Probability = 42.043 %                                                                                                                                                          
+
+Block Size: 64
+Number of Trials =     131072   MegaTrials/Second =  3934.6782
+Probability = 41.911 %                                                                                                                                                            
+
+Block Size: 64
+Number of Trials =     262144   MegaTrials/Second =  6971.9150
+Probability = 42.015 %
+                                                                                                                                                             
+Block Size: 64
+Number of Trials =     524288   MegaTrials/Second = 10821.6644
+Probability = 42.079 %
+                                                                                                                                                        
+Block Size: 64
+Number of Trials =    1024000   MegaTrials/Second = 15609.7560
+Probability = 42.010 %
+                                                                                                                                                             
+Block Size: 128
+Number of Trials =      16384   MegaTrials/Second =   484.8485
+Probability = 42.365 %                                                                                                                                                             
+
+Block Size: 128
+Number of Trials =      32768   MegaTrials/Second =   925.0225
+Probability = 42.316 %                                                                                                                                                           
+
+Block Size: 128
+Number of Trials =      65536   MegaTrials/Second =  1830.2055
+Probability = 41.995 %                                                                                                                                                           
+
+Block Size: 128
+Number of Trials =     131072   MegaTrials/Second =  3996.0975
+Probability = 41.933 %                                                                                                                                                            
+
+Block Size: 128
+Number of Trials =     262144   MegaTrials/Second =  7386.8353
+Probability = 42.132 %                                                                                                                                                             
+
+Block Size: 128
+Number of Trials =     524288   MegaTrials/Second = 11838.1508
+Probability = 42.150 %                                                                                                                                                             
+
+Block Size: 128
+Number of Trials =    1024000   MegaTrials/Second = 16701.4611
+Probability = 41.955 %
