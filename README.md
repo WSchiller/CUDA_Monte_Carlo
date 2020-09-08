@@ -1,6 +1,6 @@
 # CUDA_Monte_Carlo
 
-The Secnario
+The Scenario
 
 <img src="MonteCarloLaser.jpg" alt="Laser"/>
 
