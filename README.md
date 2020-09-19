@@ -1,6 +1,6 @@
 # CUDA_Monte_Carlo
 
-The Scenario
+Four scenarios:
 
 <img src="MonteCarloLaser.jpg" alt="Laser"/>
 
