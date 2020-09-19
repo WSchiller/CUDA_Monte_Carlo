@@ -60,15 +60,12 @@ __global__  void MonteCarlo(float* Xcs, float* Ycs, float* Rs, int* Hits)
 	Hits[gid] = 0;  // initialize array of ints, Hits, to all 0's
 
 	// solve for the intersection using the quadratic formula:
-
 	float a = 1. + tn * tn;
 	float b = -2. * (xc + yc * tn);
 	float c = xc * xc + yc * yc - r * r;
 	float d = b * b - 4. * a * c;
 
 		// cascading if-statements:
-		//	if you used "continue;" in project #1, change to this style because,
-		//	if there is no for-loop, then there is nowhere to continue to
 
 		// Check conditions if a hit
 		if (d >= 0.)  
@@ -125,14 +122,12 @@ int main(int argc, char* argv[])
 	int dev = findCudaDevice(argc, (const char**)argv);
 
 	// allocate host memory:
-
 	float* hXcs = new float[NUMTRIALS];
 	float* hYcs = new float[NUMTRIALS];
 	float* hRs = new float[NUMTRIALS];
 	int* hHits = new   int[NUMTRIALS];
 
 	// fill the random-value arrays:
-	
 	for (int n = 0; n < NUMTRIALS; n++)
 	{
 		hXcs[n] = Ranf(XCMIN, XCMAX);
@@ -141,7 +136,6 @@ int main(int argc, char* argv[])
 	}
 
 	// allocate device memory:
-
 	float* dXcs, * dYcs, * dRs;
 	int* dHits;
 
@@ -166,7 +160,6 @@ int main(int argc, char* argv[])
 
 
 	// copy host memory to the device:
-
 	status = cudaMemcpy(dXcs, hXcs, NUMTRIALS * sizeof(float), cudaMemcpyHostToDevice);
 	checkCudaErrors(status);
 
@@ -178,16 +171,13 @@ int main(int argc, char* argv[])
 
 
 	// setup the execution parameters:
-
 	dim3 threads(BLOCKSIZE, 1, 1);
 	dim3 grid(NUMBLOCKS, 1, 1);
 
 	// create and start timer
-
 	cudaDeviceSynchronize();
 
 	// allocate CUDA events that we'll use for timing:
-
 	cudaEvent_t start, stop;
 	status = cudaEventCreate(&start);
 	checkCudaErrors(status);
@@ -195,21 +185,17 @@ int main(int argc, char* argv[])
 	checkCudaErrors(status);
 
 	// record the start event:
-
 	status = cudaEventRecord(start, NULL);
 	checkCudaErrors(status);
 
 	// execute the kernel:
-
 	MonteCarlo << < grid, threads >> > (dXcs, dYcs, dRs, dHits);
 
 	// record the stop event:
-
 	status = cudaEventRecord(stop, NULL);
 	checkCudaErrors(status);
 
 	// wait for the stop event to complete:
-
 	status = cudaEventSynchronize(stop);
 	checkCudaErrors(status);
 
@@ -218,7 +204,6 @@ int main(int argc, char* argv[])
 	checkCudaErrors(status);
 
 	// compute and print the performance
-
 	double secondsTotal = 0.001 * (double)msecTotal;
 	double trialsPerSecond = (float)NUMTRIALS / secondsTotal;
 	double megaTrialsPerSecond = trialsPerSecond / 1000000.;
@@ -226,13 +211,11 @@ int main(int argc, char* argv[])
 	fprintf(stderr, "Number of Trials = %10d\tMegaTrials/Second = %10.4lf\n", NUMTRIALS, megaTrialsPerSecond);
 
 	// copy result from the device to the host:
-
 	status = cudaMemcpy(hHits, dHits, NUMTRIALS * sizeof(int), cudaMemcpyDeviceToHost);
 	checkCudaErrors(status);
 	cudaDeviceSynchronize();
 
 	// compute the probability:
-
 	int numHits = 0;
 	for (int i = 0; i < NUMTRIALS; i++)
 	{
